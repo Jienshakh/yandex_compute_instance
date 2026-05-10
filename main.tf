@@ -68,6 +68,7 @@ resource "yandex_compute_instance" "vm" {
   lifecycle {
     ignore_changes = [
       boot_disk,
+      secondary_disk,
     ]
   }
 }
