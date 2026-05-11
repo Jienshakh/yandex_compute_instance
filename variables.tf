@@ -22,7 +22,7 @@ variable "instance_name" {
 
 variable "platform" {
    type          = string
-   default       = "standard-v1"
+   default       = "standard-v3"
    description   = "Example to validate VM platform."
    validation {
      condition = contains(["standard-v1", "standard-v2", "standard-v3"], var.platform)
